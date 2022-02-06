@@ -1,0 +1,5 @@
+#GET/DUMMY
+method: GET
+url:  https://dummyapi.io/data/v1/user?limit=10
+header: app-id 61fff32218edc73644ad7b6a
+
