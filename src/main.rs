@@ -10,7 +10,7 @@ mod responses {
 
 #[tokio::main]
 async fn main() {
-    let comm_values: command_parse::Instructions = command_parse::read_flags();
+    let comm_values: command_parse::Instructions = command_parse::parse_command();
     //let method = comm_values.method.expect("Error getting method from file");
 
     if comm_values.file {

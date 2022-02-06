@@ -11,7 +11,7 @@ pub struct Instructions {
     pub body: Option<String>
 }
 
-pub fn read_flags() -> Instructions {
+pub fn parse_command() -> Instructions {
     let args: Vec<String> = env::args().collect();
     let mut instructions = Instructions{file: false, file_name: None, method: None, url: None, header_name: None, header_value: None, body: None};
 
@@ -28,6 +28,7 @@ pub fn read_flags() -> Instructions {
 
     return instructions 
 }
+
 
 // -m for method
 // -u for url

@@ -13,6 +13,7 @@ pub fn read_file(file_name: String) -> String {
     return content;
 }
 
+// Turns file content into FileInstructions //
 pub fn parse_file(file_content: String) -> FileInstrusctions {
     let clean_input = file_content.replace("\r", "");
     let commands: Vec<&str> = clean_input.split("\n").collect();
